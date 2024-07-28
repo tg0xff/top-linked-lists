@@ -21,4 +21,14 @@ class LinkedList {
     this.tail = node;
     this.size++;
   }
+  prepend(value) {
+    const node = new Node();
+    node.value = value;
+    node.nextNode = this.head;
+    this.head = node;
+    if (this.tail === null) {
+      this.tail = node;
+    }
+    this.size--;
+  }
 }
