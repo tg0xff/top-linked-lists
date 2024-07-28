@@ -31,4 +31,11 @@ class LinkedList {
     }
     this.size--;
   }
+  at(index) {
+    let node = this.head;
+    for (let i = 0; node !== null && i < index; i++) {
+      node = node.nextNode;
+    }
+    return node ?? -1;
+  }
 }
