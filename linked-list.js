@@ -31,7 +31,7 @@ export default class LinkedList {
     if (this.tail === null) {
       this.tail = node;
     }
-    this.size--;
+    this.size++;
   }
   at(index) {
     let node = this.head;
