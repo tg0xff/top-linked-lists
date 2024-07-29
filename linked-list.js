@@ -56,4 +56,14 @@ class LinkedList {
     }
     return false;
   }
+  find(value) {
+    let node = this.head;
+    let index = 0;
+    while (node.nextNode !== null) {
+      if (node.value === value) return index;
+      node = node.nextNode;
+      index++;
+    }
+    return -1;
+  }
 }
