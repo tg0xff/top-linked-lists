@@ -41,10 +41,11 @@ export default class LinkedList {
     return node;
   }
   pop() {
-    const node = this.at(this.size - 2);
-    node.nextNode.value = null;
-    node.nextNode = null;
-    this.tail = node;
+    const prevNode = this.at(this.size - 2);
+    const deletedNode = prevNode.nextNode;
+    deletedNode.value = null;
+    prevNode.nextNode = null;
+    this.tail = prevNode;
     if (this.size === 1) {
       this.head = null;
     }
