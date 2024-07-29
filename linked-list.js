@@ -38,4 +38,14 @@ class LinkedList {
     }
     return node ?? -1;
   }
+  pop() {
+    const node = this.at(this.size - 2);
+    node.nextNode.value = null;
+    node.nextNode = null;
+    this.tail = node;
+    if (this.size === 1) {
+      this.head = null;
+    }
+    this.size--;
+  }
 }
