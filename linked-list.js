@@ -36,7 +36,7 @@ class LinkedList {
     for (let i = 0; node !== null && i < index; i++) {
       node = node.nextNode;
     }
-    return node ?? -1;
+    return node;
   }
   pop() {
     const node = this.at(this.size - 2);
