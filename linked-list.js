@@ -105,6 +105,7 @@ export default class LinkedList {
     this.size++;
   }
   removeAt(index) {
+    if (index < 0 || index > (this.size - 1)) return;
     const prevNode = this.at(index - 1);
     const deletedNode = prevNode.nextNode;
     const nextNode = deletedNode.nextNode;
