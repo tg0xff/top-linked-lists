@@ -87,6 +87,9 @@ export default class LinkedList {
     return string;
   }
   insertAt(value, index) {
+    // An index equal to this.size would technically be valid, as it
+    // would be equivalent to this.append();
+    if (index < 0 || index > this.size) return;
     const newNode = new Node();
     newNode.value = value;
     const prevNode = this.at(index - 1);
