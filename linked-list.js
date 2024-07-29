@@ -78,4 +78,13 @@ class LinkedList {
     string += " -> null";
     return string;
   }
+  insertAt(value, index) {
+    const newNode = new Node();
+    newNode.value = value;
+    const prevNode = this.at(index - 1);
+    const displacedNode = prevNode.nextNode;
+    prevNode.nextNode = newNode;
+    newNode.nextNode = displacedNode;
+    this.size++;
+  }
 }
