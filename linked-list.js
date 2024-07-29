@@ -48,4 +48,12 @@ class LinkedList {
     }
     this.size--;
   }
+  contains(value) {
+    let node = this.head;
+    while (node.nextNode !== null) {
+      if (node.value === value) return true;
+      node = node.nextNode;
+    }
+    return false;
+  }
 }
