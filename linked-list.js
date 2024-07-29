@@ -50,7 +50,7 @@ class LinkedList {
   }
   contains(value) {
     let node = this.head;
-    while (node.nextNode !== null) {
+    while (node !== null) {
       if (node.value === value) return true;
       node = node.nextNode;
     }
@@ -59,7 +59,7 @@ class LinkedList {
   find(value) {
     let node = this.head;
     let index = 0;
-    while (node.nextNode !== null) {
+    while (node !== null) {
       if (node.value === value) return index;
       node = node.nextNode;
       index++;
