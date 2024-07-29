@@ -7,5 +7,7 @@ list.append("parrot");
 list.append("hamster");
 list.append("snake");
 list.append("turtle");
-
 console.log(list.toString());
+
+list.prepend("kookaburra");
+console.log(`Prepending 'kookaburra'\n${list.toString()}`);
