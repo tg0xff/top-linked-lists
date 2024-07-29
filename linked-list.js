@@ -92,6 +92,12 @@ export default class LinkedList {
     if (index < 0 || index > this.size) return;
     const newNode = new Node();
     newNode.value = value;
+    if (this.size === 0) {
+      this.head = newNode;
+      this.tail = newNode;
+      this.size++;
+      return;
+    }
     const prevNode = this.at(index - 1);
     const displacedNode = prevNode.nextNode;
     prevNode.nextNode = newNode;
