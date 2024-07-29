@@ -25,3 +25,6 @@ console.log(`Get index of 'fish': ${list.find("fish")}`);
 
 list.insertAt("doe", 4);
 console.log(`Insert 'doe' at index 4:\n${list.toString()}`);
+
+list.removeAt(2);
+console.log(`Remove element at index 2:\n${list.toString()}`);
