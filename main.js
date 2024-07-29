@@ -10,6 +10,9 @@ list.append("turtle");
 console.log(list.toString());
 
 list.prepend("kookaburra");
-console.log(`Prepending 'kookaburra': \n${list.toString()}`);
+console.log(`Prepend 'kookaburra':\n${list.toString()}`);
 
-console.log(`Return third element: ${list.at(2).value}`)
+console.log(`Return third element: ${list.at(2).value}`);
+
+list.pop();
+console.log(`Remove last element:\n${list.toString()}`);
