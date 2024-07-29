@@ -16,3 +16,7 @@ console.log(`Return third element: ${list.at(2).value}`);
 
 list.pop();
 console.log(`Remove last element:\n${list.toString()}`);
+
+console.log(`Contains 'cat'? ${list.contains("cat")}`);
+
+console.log(`Contains 'doe'? ${list.contains("doe")}`);
