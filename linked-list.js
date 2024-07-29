@@ -102,7 +102,6 @@ export default class LinkedList {
     prevNode.nextNode = nextNode;
     deletedNode.value = null;
     deletedNode.nextNode = null;
-    deletedNode = null;
     this.size--;
   }
 }
