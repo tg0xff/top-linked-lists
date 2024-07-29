@@ -17,7 +17,9 @@ export default class LinkedList {
     if (this.head === null) {
       this.head = node;
     }
-    this.tail.nextNode = node;
+    if (this.tail !== null) {
+      this.tail.nextNode = node;
+    }
     this.tail = node;
     this.size++;
   }
