@@ -22,3 +22,6 @@ console.log(`Contains 'doe'? ${list.contains("doe")}`);
 
 console.log(`Get index of 'snake': ${list.find("snake")}`);
 console.log(`Get index of 'fish': ${list.find("fish")}`);
+
+list.insertAt("doe", 4);
+console.log(`Insert 'doe' at index 4:\n${list.toString()}`);
