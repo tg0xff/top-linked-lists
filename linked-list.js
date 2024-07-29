@@ -87,4 +87,14 @@ class LinkedList {
     newNode.nextNode = displacedNode;
     this.size++;
   }
+  removeAt(index) {
+    const prevNode = this.at(index - 1);
+    const deletedNode = prevNode.nextNode;
+    const nextNode = deletedNode.nextNode;
+    prevNode.nextNode = nextNode;
+    deletedNode.value = null;
+    deletedNode.nextNode = null;
+    deletedNode = null;
+    this.size--;
+  }
 }
